@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour {
 	public Text countText;
 	//For the Win Text to appear;
 	public Text WinText;
-
+	//Sound Effect for Coin Pickup
+	public AudioSource coinSound;
 
 	void Start()
 	{
@@ -35,8 +36,10 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.CompareTag("Pick Up")) 
+		if (other.gameObject.CompareTag("Pick Up"))
 		{
+			//Sound effect for coin noise
+			coinSound.Play();
 			other.gameObject.SetActive(false);
 			count = count + 1;
 			SetCountText ();
@@ -46,7 +49,7 @@ public class PlayerController : MonoBehaviour {
 	void SetCountText()
 	{
 		countText.text = "Count: " + count.ToString ();
-		if (count >= 16)
+		if (count >= 20)
 		{
 			WinText.text = "YOU WIN!";
 		}

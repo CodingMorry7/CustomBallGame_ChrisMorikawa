@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScriptRotator : MonoBehaviour {
 	public float speed = 1f;
-         public float maxRotation = 20f;
+  public float maxRotation = 20f;
 
          void Update()
          {

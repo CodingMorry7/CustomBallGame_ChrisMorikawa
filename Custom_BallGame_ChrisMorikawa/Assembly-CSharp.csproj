@@ -52,7 +52,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\CameraController.cs" />
+     <Compile Include="Assets\_Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\_Scripts\CoinRotate.cs" />
+     <Compile Include="Assets\_Scripts\ExitGameScript.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
+     <Compile Include="Assets\_Scripts\RespawnCharacter.cs" />
      <Compile Include="Assets\_Scripts\ScriptRotator.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
